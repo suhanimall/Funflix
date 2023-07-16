@@ -1,0 +1,81 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: url("https://raw.githubusercontent.com/thatanjan/netflix-clone-yt/youtube/media//banner.jpg");
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+
+    .top {
+        .wrapper {
+            padding: 20px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+                color: red;
+                font-size: 40px;
+                font-weight: 700;
+
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        top: 0;
+        left: 0;
+
+        form {
+            height: 300px;
+            width: 300px;
+            padding: 30px;
+            background-color: var(--main-color);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        input {
+            outline: none;
+            height: 40px;
+            border-radius: 5px;
+            background-color: gray;
+            color: white;
+            padding-left: 10px;
+
+            &::placeholder {
+                color: lightgray;
+            }
+        }
+
+        button {
+            height: 40px;
+            background-color: red;
+            color: white;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        span {
+            color: lightgray;
+
+            b {
+                color: white;
+            }
+        }
+    }
+}
